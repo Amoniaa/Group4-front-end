@@ -1,0 +1,119 @@
+@import url("//unpkg.com/element-ui@2.14.1/lib/theme-chalk/index.css");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.el-container {
+	height: 100%;
+}
+
+.el-header {
+	display: flex;
+	justify-content: space-between;
+	line-height: 30px;
+	background-color: #007AFF;
+}
+
+.el-footer {
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	background-color: #6F6F73;
+	height: 120px !important;
+	padding: 30px 0;
+}
+
+header {
+	padding-top: 2%;
+	color: #fff;
+	height: 30%;
+	background-color: #5A9FFA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 64px;
+	letter-spacing: 10px;
+}
+
+main {
+	background: linear-gradient(#5A9FFA 50%, #E9EEF3 50%);
+	background-size: 100% 50%;
+	background-repeat: no-repeat;
+	height: 70%;
+	color: #333;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.el-main {
+	background-color: #E9EEF3;
+	color: #333;
+	text-align: center;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0;
+}
+
+body>.el-container {
+	margin-bottom: 40px;
+}
+
+.box-card {
+	margin: 25px 50px;
+	width: 480px;
+	height: 400px;
+	border-radius: 15px;
+}
+
+.v-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.el-upload-dragger {
+	background-color: #fff;
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	box-sizing: border-box;
+	width: 440px;
+	height: 310px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.el-icon-upload {
+	font-size: 67px;
+	color: #C0C4CC;
+	margin: 100px 0 40px !important;
+	line-height: 50px;
+}
+
+.v-center div {
+	background-color: #E9EEF3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	width: 90%;
+	border-radius: 15px;
+}
+
+.v-center div i {
+	margin: 15px;
+}

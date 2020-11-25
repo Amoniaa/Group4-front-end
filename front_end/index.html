@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>口罩佩戴检测平台</title>
+	</head>
+	<body>
+		<div id="app">
+			<el-container>
+				<el-header>
+					<h4>个人中心</h4>
+					<h4>注册/登录</h4>
+				</el-header>
+				<el-main>
+					<header>
+						<h1>口罩佩戴检测平台</h1>
+					</header>
+					<main>
+						<div>
+							<el-card class="box-card">
+								<el-upload class="upload-demo" drag action="https://jsonplaceholder.typicode.com/posts/" multiple>
+									<i class="el-icon-upload"></i>
+									<div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+									<!-- <div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div> -->
+								</el-upload>
+
+							</el-card>
+							<el-button size="small" type="primary">点击上传</el-button>
+						</div>
+						<div>
+							<el-card class="box-card v-center">
+								<!-- <el-image src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"></el-image> -->
+								<div>
+									<i class="el-icon-picture-outline"></i>
+									识别结果
+								</div>
+							</el-card>
+							<el-button size="small" type="primary">开始识别</el-button>
+						</div>
+					</main>
+				</el-main>
+			<el-footer>
+				<p>© 2020 口罩佩戴检测平台 V1.0<br>京ICP备10000000号-2</p>
+			</el-footer>
+			</el-container>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		//注册使用vue
+		var Vue = window.Vue;
+		var app = new Vue({
+			el: '#app',
+			data() {
+				return {
+
+				}
+			},
+			methods: {
+
+			}
+
+		})
+	</script>
+
+</html>
