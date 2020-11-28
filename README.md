@@ -10,4 +10,4 @@
 ![主页](https://img-blog.csdnimg.cn/20201125101556864.PNG)
 
 ### 【2020/11/22】完成UI设计初稿：
-:bookmark_tabs: [UI设计初稿](https://github.com/Amoniaa/Group4-project-documentation/blob/main/%E9%A1%B9%E7%9B%AE%E5%8E%9F%E5%9E%8BUI%E8%AE%BE%E8%AE%A1.md)
+:bookmark_tabs: [Web UI设计初稿](https://github.com/Amoniaa/Group4-project-documentation/blob/main/%E9%A1%B9%E7%9B%AE%E5%8E%9F%E5%9E%8BUI%E8%AE%BE%E8%AE%A1.md)
