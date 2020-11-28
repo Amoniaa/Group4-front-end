@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>口罩佩戴检测平台</title>
+	</head>
+	<body>
+		<div id="app">
+			<el-container>
+				<el-header>
+					<h4 class="list-item"><a href="index.html">主页</a></h4>
+					<h4 class="list-item"><a href="#">注销</a></h4>
+				</el-header>
+				<el-main>
+					<header>
+						<h1>口罩佩戴检测平台</h1>
+					</header>
+					<main>
+						<div>
+							<el-card class="mine-card">
+								<div class="innercontainer">
+									<el-avatar :size="80">
+										<img src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png" />
+									</el-avatar>
+								</div>
+								<h1>
+									用户名
+								</h1>
+								<el-button size="small" type="primary">注销</el-button>
+							</el-card>
+						</div>
+						<div>
+
+							<el-card class="history-card">
+								<div class="container">
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+									<el-image style="width: 140px; height: auto" :src="url" :preview-src-list="srcList">
+									</el-image>
+								</div>
+							</el-card>
+						</div>
+					</main>
+				</el-main>
+				<el-footer>
+					<p>© 2020 口罩佩戴检测平台 V1.0<br>京ICP备10000000号-2</p>
+				</el-footer>
+			</el-container>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		//注册使用vue
+		var Main = {
+			data() {
+				return {
+					url: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+					srcList: [
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
+						'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'
+					]
+				}
+			}
+		}
+		var Ctor = Vue.extend(Main)
+		new Ctor().$mount('#app')
+	</script>
+
+</html>
