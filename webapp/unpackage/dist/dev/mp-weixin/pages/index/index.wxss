@@ -1,0 +1,113 @@
+
+button {
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+.button-sp-area {
+	margin: 0 auto;
+	width: 400rpx;
+}
+
+/* 上传 */
+.uni-uploader {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.uni-uploader-head {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.uni-uploader-title {
+	color: #55aaff;
+	font-size: 38rpx;
+	margin: 20rpx;
+}
+.uni-uploader-info {
+	color: #B2B2B2;
+}
+.uni-uploader-body {
+	height: 488rpx;
+	margin-top: 16rpx;
+}
+.uni-uploader__files {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.uni-uploader__file {
+	width: 600rpx;
+	height: 450rpx;
+}
+.uni-uploader__img {
+	display: block;
+	width: 600rpx;
+	height: 450rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+}
+.uni-uploader__input-box {
+	position: relative;
+	margin: 10rpx;
+	width: 592rpx;
+	height: 442rpx;
+	border: 4rpx solid #55aaff;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+}
+.uni-uploader__input-box:before,
+.uni-uploader__input-box:after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #55aaff;
+}
+.uni-uploader__input-box:before {
+	width: 4rpx;
+	height: 79rpx;
+}
+.uni-uploader__input-box:after {
+	width: 79rpx;
+	height: 4rpx;
+}
+.uni-uploader__input-box:active {
+	border-color: #999999;
+}
+.uni-uploader__input-box:active:before,
+.uni-uploader__input-box:active:after {
+	background-color: #999999;
+}
+.uni-uploader__input {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
