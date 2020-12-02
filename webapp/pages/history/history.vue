@@ -31,10 +31,6 @@
 				</view>
 			</view>
 
-			<view class="button-sp-area">
-				<button class="plain" hover-class="plain-hover" @tap="clear">重新选择</button>
-				<button class="button" hover-class="button-hover" @tap="post">开始识别</button>
-			</view>
 		</view>
 	</view>
 </template>

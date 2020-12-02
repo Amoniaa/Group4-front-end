@@ -246,6 +246,7 @@ var _self;var _default =
                     console.log(res.tempFilePaths);
                     _this.image = res.tempFilePaths[0];
                     _this.imageList = _this.imageList.concat(res.tempFilePaths);
+                    console.log("this.image: " + _this.image);
                     //console.log("this.imageList: " + this.imageList.length);
                   },
                   fail: function fail(err) {
@@ -320,7 +321,7 @@ var _self;var _default =
       // 封装成上传对象
       var uper = uni.uploadFile({
         // 需要上传的地址
-        url: 'http://demo.hcoder.net/index.php?c=uperTest',
+        url: '#',
         // filePath  需要上传的文件
         filePath: imgFiles,
         name: 'file',
