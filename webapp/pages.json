@@ -54,12 +54,12 @@
 				"selectedIconPath": "static/icon/index_s.png",
 				"text": "图片检测"
 			},
-			{
-				"pagePath": "pages/live/live",
-				"iconPath": "static/icon/live.png",
-				"selectedIconPath": "static/icon/live_s.png",
-				"text": "实时检测"
-			},
+			// {
+			// 	"pagePath": "pages/live/live",
+			// 	"iconPath": "static/icon/live.png",
+			// 	"selectedIconPath": "static/icon/live_s.png",
+			// 	"text": "实时检测"
+			// },
 			{
 				"pagePath": "pages/me/me",
 				"iconPath": "static/icon/me.png",

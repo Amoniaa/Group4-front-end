@@ -1,6 +1,6 @@
 {
     "name" : "webapp",
-    "appid" : "",
+    "appid" : "__UNI__C172293",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,18 +50,24 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     /* 快应用特有相关 */
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx73363e813fac9b80",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {}
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -72,7 +78,17 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
-        "enable": false
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "title" : "webapp",
+        "domain" : "test.com",
+        "router" : {
+            "base" : "./"
+        },
+        "devServer" : {
+            "https" : false
+        }
     }
 }

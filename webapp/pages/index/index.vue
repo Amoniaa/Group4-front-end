@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="content">
-			<progress v-if="percent!=100&&!percent" :percent="percent" strock-width="5" activeColor="#55aa00"></progress>
+			<!-- <progress v-if="percent!=100&&!percent" :percent="percent" strock-width="5" activeColor="#55aa00"></progress> -->
 			<view class="uni-list list-pd">
 				<view class="uni-list-cell cell-pd">
 					<view class="uni-uploader">
@@ -17,10 +17,10 @@
 								</block>
 								<block v-if="resimage">
 									<view class="uni-uploader__file">
-										<image class="uni-uploader__img" :src="resimage" :data-src="resimage" @tap="previewImage"></image>
+										<image class="uni-uploader__img" :src="resimage"></image>
 									</view>
 								</block>
-								<block v-if="!image">
+								<block v-if="(!image)&&(!resimage)">
 									<view class="uni-uploader__input-box">
 										<view class="uni-uploader__input" @tap="chooseImage"></view>
 									</view>
@@ -30,10 +30,10 @@
 					</view>
 				</view>
 			</view>
-
 			<view class="button-sp-area">
 				<button class="plain" hover-class="plain-hover" @tap="clear">重新选择</button>
 				<button class="button" hover-class="button-hover" @tap="post">开始识别</button>
+				<!-- <button class="button" hover-class="button-hover" @tap="test">test</button> -->
 			</view>
 		</view>
 	</view>
@@ -59,7 +59,6 @@
 				title: 'choose/previewImage',
 				image: '',
 				resimage: '',
-				imageList: [],
 				imageList: [],
 				sourceTypeIndex: 2,
 				sourceType: ['拍照', '相册', '拍照或相册'],
@@ -156,6 +155,8 @@
 			clear: function(e) {
 				//this.imageList = []
 				this.image = ''
+				this.resimage = ''
+				this.chooseImage()
 			},
 			previewImage: function(e) {
 				var current = e.target.dataset.src
@@ -164,28 +165,31 @@
 					urls: this.imageList
 				})
 			},
-			// cI(){
-			//     uni.chooseImage({
-			//         count: 1,
-			//         sizetype: ['compressed'],
-			//         success(res){
-			//             // tepFliePaths 保存图片路径
-			//             var imgFiles = res.tempFilePaths;
-			//             // 因为没写下标， 直接以数组形式输出
-			//             console.log(imgFiles)
-			//         }
-			//     })
-			// }
+			test: function() {
+				uni.request({
+					url: 'http://localhost:8000/detect/',
+					success: (res) => {
+						console.log("------------------res----------------------");
+						console.log(res.data.image);
+						this.resimage = 'data:image/jpg;base64,' + res.data.image;
+					}
+				});
+			},
 			post: function() {
 				var imgFiles = this.image
-				console.log("----------------图片信息-----------------")
+				console.log("-----------------图片信息-----------------")
 				console.log(imgFiles)
 				// 上传图片
-
+				uni.showToast({
+				    title: '识别中，请稍后',
+					icon: 'loading',
+					mask: true
+				});
 				// 封装成上传对象
 				var uper = uni.uploadFile({
 					// 需要上传的地址
-					url: '#',
+					//url: '#',
+					url: 'http://demo.hcoder.net/index.php?c=uperTest',
 					// filePath  需要上传的文件
 					filePath: imgFiles,
 					name: 'file',
@@ -194,11 +198,13 @@
 					},
 					success(res1) {
 						// 显示上传信息
+						
 						console.log("----------------上传信息-----------------")
 						console.log(res1)
+						uni.hideToast()
 					}
 				});
-				// onProgressUpdate 上传对象更新的方法
+				//onProgressUpdate 上传对象更新的方法
 				uper.onProgressUpdate(function(res) {
 					// 进度条等于 上传到的进度
 					_self.percent = res.progress
@@ -263,7 +269,7 @@
 	}
 
 	.button-sp-area {
-		margin: 0 auto;
+		margin: 20px auto 0;
 		width: 400upx;
 	}
 

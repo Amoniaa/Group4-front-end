@@ -1,36 +1,7 @@
 <template>
 	<view class="container">
 		<view class="content">
-			<progress v-if="percent!=100&&!percent" :percent="percent" strock-width="5" activeColor="#55aa00"></progress>
-			<view class="uni-list list-pd">
-				<view class="uni-list-cell cell-pd">
-					<view class="uni-uploader">
-						<view class="uni-uploader-head">
-							<!-- <view class="uni-uploader-title">点击可预览选好的图片</view> -->
-						</view>
-						<view class="uni-uploader-body">
-							<view class="uni-uploader__files">
-								<block v-if="image">
-									<view class="uni-uploader__file">
-										<image class="uni-uploader__img" :src="image" :data-src="image" @tap="previewImage"></image>
-									</view>
-								</block>
-								<block v-if="resimage">
-									<view class="uni-uploader__file">
-										<image class="uni-uploader__img" :src="resimage" :data-src="resimage" @tap="previewImage"></image>
-									</view>
-								</block>
-								<block v-if="!image">
-									<view class="uni-uploader__input-box">
-										<view class="uni-uploader__input" @tap="chooseImage"></view>
-									</view>
-								</block>
-							</view>
-						</view>
-					</view>
-				</view>
-			</view>
-
+			
 		</view>
 	</view>
 </template>
