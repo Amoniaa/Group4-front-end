@@ -3,7 +3,7 @@
 这是一个能够有效识别人脸并检测口罩佩戴情况的跨平台系统
 
 ### 【2020/12/7】成功部署至服务器，网址：
-![amoniaa.gitee.io/facemask-identify(http://amoniaa.gitee.io/facemask-identify/#/)
+![amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
 
 ### 【2020/12/2】完成个人中心页和注册登录页的重构：
 ![图片检测页](https://img-blog.csdnimg.cn/20201202124907341.PNG)
