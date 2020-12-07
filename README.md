@@ -1,6 +1,6 @@
-# Group4-front-end
 # 软件工程第四小组项目前端部分
-##这是一个能够有效识别人脸并检测口罩佩戴情况的跨平台系统 [amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
+## 这是一个能够有效识别人脸并检测口罩佩戴情况的跨平台系统 
+## [amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
 
 ### 【2020/12/7】成功部署至服务器，网址：
 [amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
