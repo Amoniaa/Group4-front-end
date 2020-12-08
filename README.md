@@ -1,6 +1,9 @@
 # 软件工程第四小组项目前端部分
-## 这是一个能够有效识别人脸并检测口罩佩戴情况的跨平台系统 
-## [amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
+## 一个能够检测口罩佩戴情况的跨平台系统[amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
+
+### 【2020/12/8】UI优化，增加疫情信息查询功能：
+![图片检测页](https://img-blog.csdnimg.cn/20201208211152913.PNG)
+![疫情信息页](https://img-blog.csdnimg.cn/2020120821115323.PNG)
 
 ### 【2020/12/7】成功部署至服务器，网址：
 [amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
