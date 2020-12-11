@@ -6,6 +6,6 @@
 ### 🍭[开发日志](https://github.com/Amoniaa/Group4-front-end/blob/main/logs.md)
 
 ### 🍭部分截图（网页+Android+小程序）：
-![网页](https://i1.hdslb.com/bfs/archive/6c409890e02a80f8af52171246c2509da280a71a.jpg@560w_350h_100Q_1c.webp)
+![网页](https://img-blog.csdnimg.cn/2020121121595256.jpg)
 ![Android](https://img-blog.csdnimg.cn/2020121121595246.JPG)
 ![小程序](https://img-blog.csdnimg.cn/2020121121595287.JPG)
