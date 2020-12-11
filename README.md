@@ -3,3 +3,4 @@
 演示地址：[amoniaa.gitee.io/facemask-identify](http://amoniaa.gitee.io/facemask-identify/#/)
 ### 🍭技术栈：vue.js + uni-app
 
+### 🍭[开发日志](https://github.com/Amoniaa/Group4-front-end/blob/main/logs.md)
