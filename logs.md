@@ -1,6 +1,6 @@
 ## 项目开发日志
 ### :chart_with_upwards_trend:【2020/12/11】UI优化，增加登录、注册、历史记录查询功能(项目功能全部完成)：
-![个人中心页](https://img-blog.csdnimg.cn/20201211211903572.PNG)
+
 
 ### :chart_with_upwards_trend:【2020/12/8】UI优化，增加疫情信息查询功能：
 ![图片检测页](https://img-blog.csdnimg.cn/20201208211152913.PNG)
