@@ -4,3 +4,8 @@
 ### 🍭技术栈：vue.js + uni-app
 
 ### 🍭[开发日志](https://github.com/Amoniaa/Group4-front-end/blob/main/logs.md)
+
+### 🍭部分截图（网页+Android+小程序）：
+![网页](https://img-blog.csdnimg.cn/2020121121595256.jpg)
+![Android](https://img-blog.csdnimg.cn/2020121121595246.JPG)
+![小程序](https://img-blog.csdnimg.cn/2020121121595287.JPG)
